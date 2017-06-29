@@ -19,6 +19,10 @@ app.get('/test', function (req, res){  // '/' == route, can have multiple routes
 	res.send('hello world'); //send something back to function, can send files/pages, acts as return statement.
 });
 
+app.post('/', function (req, res){
+	
+})
+
 app.listen(3000, function(){	//server is listening at port 3000
 	console.log('Example app listening on port 3000!'); 
 })
