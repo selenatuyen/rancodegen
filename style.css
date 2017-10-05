@@ -1,0 +1,75 @@
+html, body{
+	height: 100%;
+	width: 100%;
+	background: #800000;
+	display: table;
+	overflow: hidden;
+}
+
+/* font css*/
+p{
+	font-size: 2em;
+}
+
+/* main container css*/
+.contain{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding: 3em;
+}
+
+/* quote css*/
+#quote{
+	color: white;
+	font-family: Inconsolata;
+	position: relative;
+}
+
+/* source css*/
+#author{
+	opacity: 1;
+	font-size: 1em;
+	padding-right: 2em;
+	text-align: right;
+	color: white;
+	font-family: Inconsolata;
+	position: relative;
+	-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
+}
+
+/* for after stage of source*/
+.fade{
+	opacity: 0 !important;
+}
+
+/* after stage of quote*/
+.executed{
+	opacity: 1;
+	right: 0;
+	-webkit-transition: all 2s ease-in-out;
+		-moz-transition: all 2s ease-in-out;
+		-o-transition: all 2s ease-in-out;
+		transition: all 2s ease-in-out;
+}
+
+/* before stage of quote; slide right when presented and left when removed*/
+.reset{
+	opacity: 0;
+	right: 600;
+	-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
+}
+
+/* Bottom instructions */
+.bottom{
+	bottom: 10;
+	position: absolute;
+	color: #ffffff;
+	font-family: Inconsolata;
+}
